@@ -1,5 +1,5 @@
-%!TEX TS-program = xelatex
 %!TEX encoding = UTF-8 Unicode
+%!TEX program = xelatex
 % Awesome CV LaTeX Template for CV/Resume
 %
 % This template has been downloaded from:
@@ -18,7 +18,7 @@
 % CONFIGURATIONS
 %-------------------------------------------------------------------------------
 % A4 paper size by default, use 'letterpaper' for US letter
-\documentclass[25pt, a4paper]{awesome-cv}
+\documentclass[11pt, a4paper]{awesome-cv}
 \usepackage{fontspec}
 
 % Configure page margins with geometry
@@ -71,9 +71,8 @@
 % \googlescholar{googlescholar-id}{name-to-display}
 %% \firstname and \lastname will be used
 % \googlescholar{googlescholar-id}{}
-% \extrainfo{extra informations}
+ \extrainfo{Birth date: 7 September 1991}
 
-%%\quote{``Be the change that you want to see in the world."}
 
 
 %-------------------------------------------------------------------------------
@@ -95,9 +94,11 @@
 %	Each section is imported separately, open each file in turn to modify content
 %-------------------------------------------------------------------------------
 \input{sections/summary.tex}
+\vspace*{-20pt}
 \input{sections/experience.tex}
-\input{sections/honors.tex}
-\input{sections/writing.tex}
 \input{sections/education.tex}
+%\input{sections/honors.tex}
+\vspace*{-15pt}
+\input{sections/writing.tex}
 %-------------------------------------------------------------------------------
 \end{document}
