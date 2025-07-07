@@ -1,0 +1,27 @@
+{
+  "name": "LaTeX CV",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "args": {
+      "REMOTE_USER": "${localEnv:USER}",
+      "REMOTE_UID": "${localEnv:REMOTE_UID:1000}",
+      "REMOTE_GID": "${localEnv:REMOTE_GID:1000}"
+    },
+  },
+  "remoteEnv": {
+    "TEXINPUTS": "./Awesome-CV:",
+  },
+  "runArgs": [
+    "--network=host",
+  ],
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "james-yu.latex-workshop"
+      ]
+    },
+    "codespaces": {
+      "disableAutomaticConfiguration": true
+    }
+  }
+}
