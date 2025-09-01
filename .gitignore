@@ -8,7 +8,8 @@
 *.out
 *.toc
 *.gz
-*.pdf
+*.pdf 
+*.xdv
 out/
 
 ## Intermediate documents:
