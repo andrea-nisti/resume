@@ -13,7 +13,6 @@
 % CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
 %
 
-
 %-------------------------------------------------------------------------------
 % CONFIGURATIONS
 %-------------------------------------------------------------------------------
@@ -21,58 +20,23 @@
 \documentclass[11pt, a4paper]{awesome-cv}
 \usepackage{fontspec}
 
-% Configure page margins with geometry
 \geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
 
-% Specify the location of the included fonts
 \fontdir[fonts/]
 
-% Color for highlights
-% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
-%                 awesome-nephritis, awesome-concrete, awesome-darknight
 \colorlet{awesome}{awesome-emerald}
-% Uncomment if you would like to specify your own color
-% \definecolor{awesome}{HTML}{CA63A8}
 
-% Colors for text
-% Uncomment if you would like to specify your own color
-% \definecolor{darktext}{HTML}{414141}
-% \definecolor{text}{HTML}{333333}
-% \definecolor{graytext}{HTML}{5D5D5D}
-% \definecolor{lighttext}{HTML}{999999}
-
-% Set false if you don't want to highlight section with awesome color
 \setbool{acvSectionColorHighlight}{true}
 
-% If you would like to change the social information separator from a pipe (|) to something else
 \renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
 
-
-%-------------------------------------------------------------------------------
-%	PERSONAL INFORMATION
-%	Comment any of the lines below if they are not required
-%-------------------------------------------------------------------------------
-% Available options: circle|rectangle,edge/noedge,left/right
-% \photo[rectangle,edge,right]{./examples/profile}
 \name{Andrea}{Nisticò}
-%\position{Software Architect{\enskip\cdotp\enskip}Security Expert}
 \address{Via Macaggi 18/5, 16121 Genova GE, Italy}
 \mobile{+39 320 1108745}
 \email{andrea.nistic@gmail.com}
 \github{andrea-nisti}
 \linkedin{andrea-nistico}
-% \gitlab{gitlab-id}
-% \stackoverflow{SO-id}{SO-name}
-% \twitter{@twit}
-% \skype{skype-id}
-% \reddit{reddit-id}
-% \medium{madium-id}
-% \googlescholar{googlescholar-id}{name-to-display}
-%% \firstname and \lastname will be used
-% \googlescholar{googlescholar-id}{}
- \extrainfo{Birth date: 7 September 1991}
-
-
+\extrainfo{Birth date: 7 September 1991}
 
 %-------------------------------------------------------------------------------
 \begin{document}
@@ -84,13 +48,13 @@
 % Print the footer with 3 arguments(<left>, <center>, <right>)
 % Leave any of these blank if they are not needed
 \makecvfooter
-  {\today}
-  {Andrea Nisticò~~~·~~~Résumé}
-  {\thepage}
+{\today}
+{Andrea Nisticò~~~·~~~Résumé}
+{\thepage}
 
 %-------------------------------------------------------------------------------
-%	CV/RESUME CONTENT
-%	Each section is imported separately, open each file in turn to modify content
+%  CV/RESUME CONTENT
+%  Each section is imported separately, open each file in turn to modify content
 %-------------------------------------------------------------------------------
 \input{sections/summary.tex}
 \input{sections/experience.tex}
