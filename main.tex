@@ -19,16 +19,36 @@
 % A4 paper size by default, use 'letterpaper' for US letter
 \documentclass[11pt, a4paper]{awesome-cv}
 \usepackage{fontspec}
+\usepackage{setspace}  % allows fine-grained line spacing control
 
-\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+\geometry{left=1.4cm, top=.5cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
 
-\fontdir[fonts/]
+% \fontdir[/workspaces/resume/fonts/]
+\renewfontfamily\bodyfont{Montserrat}[
+  Path = fonts/,            % relative folder
+  Extension = .ttf,         % file extension
+  UprightFont = *-Regular,  % Montserrat-Regular.ttf
+  BoldFont = *-Bold,        % Montserrat-Bold.ttf
+  ItalicFont = *-Italic     % Montserrat-Italic.ttf
+]
 
 \colorlet{awesome}{awesome-emerald}
 
 \setbool{acvSectionColorHighlight}{true}
 
 \renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+% Define a new spacing factor for CV paragraphs
+\renewenvironment{cvparagraph}{%
+  \vspace{\acvSectionContentTopSkip}
+  \vspace{-3mm}
+  \paragraphstyle
+  %   \begin{spacing}{1}  % increase line spacing by 20%
+}{%
+  % \end{spacing}
+  \par
+  \vspace{2mm}
+}
 
 \name{Andrea}{Nisticò}
 \address{Via Macaggi 18/5, 16121 Genova GE, Italy}
