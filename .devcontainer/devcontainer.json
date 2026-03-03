@@ -7,6 +7,9 @@
       "REMOTE_UID": "${localEnv:REMOTE_UID:1000}",
       "REMOTE_GID": "${localEnv:REMOTE_GID:1000}"
     },
+    "options": [
+      "--network=host"
+    ]
   },
   "remoteEnv": {
     "TEXINPUTS": "./Awesome-CV:",

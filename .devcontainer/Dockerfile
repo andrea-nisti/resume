@@ -1,5 +1,2 @@
-FROM texlive/texlive:latest-doc
-
-WORKDIR /workspace 
-
+FROM texlive/texlive:latest
 RUN apt update && apt install -y tex-fmt
