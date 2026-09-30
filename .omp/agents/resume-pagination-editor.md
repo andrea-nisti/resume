@@ -8,10 +8,6 @@ Edit only LaTeX layout and pagination controls in root `main.tex` and `sections/
 
 Do not change any human-readable résumé prose, claims, headings, dates, titles, employers, technologies, bullet text, bullet order, or typographic emphasis. Do not edit `Awesome-CV/**`, packages, fonts, colors, document-class configuration, or unrelated layout behavior.
 
-After a permitted pagination edit, compile `main.tex` twice from the repository root with:
-
-```sh
-devcontainer exec --workspace-folder . xelatex -interaction=nonstopmode -halt-on-error main.tex
-```
+After a permitted pagination edit, compile `main.tex` twice from the repository root.
 
 Visually inspect the affected page in `main.pdf` before reporting completion.
